@@ -1,0 +1,112 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2023-02-21T18:50:57.202Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.setup()"
+            }
+          },
+          {
+            "result": {
+              "duration": 828000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.setupDBConnection()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Question-1/Find out the customer id, name, surname, the city and the country of the customers who make the most purchases and how much money they have spent",
+        "description": "",
+        "id": "new-homework;question-1/find-out-the-customer-id--name--surname--the-city-and-the-country-of-the-customers-who-make-the-most-purchases-and-how-much-money-they-have-spent",
+        "after": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.tearDownDBConnection()"
+            }
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 58000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the customer id \"148\", the name \"Eleanor Hunt\", the city \"Saint-Denis\", the country \"Runion\" and the sum \"211.55\" should match the DB record",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"148\"",
+                  "offset": 16
+                },
+                {
+                  "val": "\"Eleanor Hunt\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"Saint-Denis\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"Runion\"",
+                  "offset": 84
+                },
+                {
+                  "val": "\"211.55\"",
+                  "offset": 105
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.the_customer_id_the_name_the_city_the_country_and_the_sum_should_match_the_DB_record(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@db"
+          }
+        ]
+      }
+    ],
+    "name": "New homework",
+    "description": "",
+    "id": "new-homework",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/DB.feature",
+    "tags": [
+      {
+        "name": "@db",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
